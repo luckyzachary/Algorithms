@@ -1,4 +1,5 @@
 ﻿using System;
+using LeetCode.Easy;
 
 namespace Algorithms
 {
@@ -6,7 +7,19 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Printf();
+
+            Console.WriteLine();
+            Console.WriteLine("---End---");
+            Console.ReadKey();
+        }
+
+        private static void Printf()
+        {
+            _020_ValidParentheses obj = new _020_ValidParentheses();
+            Console.WriteLine(obj.IsValid("()"));
+
+            
         }
     }
 }
