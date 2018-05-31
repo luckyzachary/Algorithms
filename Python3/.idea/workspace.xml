@@ -13,6 +13,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Python3$BinarySearchTree.coverage" NAME="BinarySearchTree Coverage Results" MODIFIED="1527748802745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Textbook" />
+    <SUITE FILE_PATH="coverage/Python3$TestBinarySearchTree.coverage" NAME="TestBinarySearchTree Coverage Results" MODIFIED="1527783372766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Textbook" />
     <SUITE FILE_PATH="coverage/Python3$Main.coverage" NAME="Main Coverage Results" MODIFIED="1527561718641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -33,7 +35,26 @@
     <favorites_list name="Python3" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="binary_search_tree.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Textbook/binary_search_tree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_binary_search_tree.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Textbook/test_binary_search_tree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="752">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -42,11 +63,29 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>index</find>
+      <find>self</find>
+      <find>array</find>
+      <find>get_all_inorder_recursion</find>
+    </findStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Main.py" />
         <option value="$PROJECT_DIR$/Assistant0.py" />
+        <option value="$PROJECT_DIR$/Textbook/t2.py" />
+        <option value="$PROJECT_DIR$/Textbook/t1.py" />
+        <option value="$PROJECT_DIR$/Textbook/tw.py" />
+        <option value="$PROJECT_DIR$/Textbook/fibo.py" />
+        <option value="$PROJECT_DIR$/Textbook/car.py" />
+        <option value="$PROJECT_DIR$/Textbook/my_car.py" />
+        <option value="$PROJECT_DIR$/Textbook/BinarySearchTree.py" />
+        <option value="$PROJECT_DIR$/Textbook/TestBinarySearchTree.py" />
+        <option value="$PROJECT_DIR$/Textbook/binary_search_tree.py" />
+        <option value="$PROJECT_DIR$/Textbook/test_binary_search_tree.py" />
       </list>
     </option>
   </component>
@@ -79,7 +118,7 @@
             <path>
               <item name="Python3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python3" type="462c0819:PsiDirectoryNode" />
-              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="Textbook" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Python3" type="b2602c69:ProjectViewProjectNode" />
@@ -94,6 +133,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -111,7 +151,45 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.TestBinarySearchTree">
+    <configuration name="BinarySearchTree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="E:\Code\Github\Algorithms\Python3\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Textbook" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\Code\Github\Algorithms\Python3\Textbook\binary_search_tree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="TestBinarySearchTree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="E:\Code\Github\Algorithms\Python3\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Textbook" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\Code\Github\Algorithms\Python3\Textbook\test_binary_search_tree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Python3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,9 +209,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <list>
+      <item itemvalue="Python.BinarySearchTree" />
+      <item itemvalue="Python.TestBinarySearchTree" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.TestBinarySearchTree" />
+        <item itemvalue="Python.BinarySearchTree" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -159,22 +248,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.32896176" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32946146" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.335141" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4121475" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32683983" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.63011456" visible="true" weight="0.23400854" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.31561822" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3383948" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3264642" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5065076" visible="true" weight="0.24200426" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32983682" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32983682" />
-      <window_info id="Structure" order="1" sideWeight="0.36988544" side_tool="true" weight="0.27171215" />
+      <window_info id="Structure" order="1" sideWeight="0.4934924" side_tool="true" visible="true" weight="0.24200426" />
       <window_info id="Favorites" order="2" sideWeight="0.36988544" side_tool="true" weight="0.23960613" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3978142" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="8" show_stripe_button="false" weight="0.32896176" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39045554" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="8" show_stripe_button="false" weight="0.3286334" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -193,13 +283,81 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>val == -4</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>rightChild</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(array)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>str(sel)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>array.len()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>array.__len__()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>array.</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>array.count(int)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>array.count()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>bst</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>array.count</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Main.py" />
-    <entry file="file://$PROJECT_DIR$/Assistant0.py" />
-    <entry file="file://$PROJECT_DIR$/Main.py" />
     <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/1717656384/_collections.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1904">
@@ -357,17 +515,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/1717656384/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="4657" column="9" selection-start-line="4657" selection-start-column="6" selection-end-line="4657" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assistant0.py" />
     <entry file="file://$PROJECT_DIR$/Package1/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Package1/package11/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Main.py" />
+    <entry file="file://$PROJECT_DIR$/Textbook/t2.py" />
+    <entry file="file://$PROJECT_DIR$/Textbook/t1.py" />
+    <entry file="file://$PROJECT_DIR$/Textbook/tw.py" />
+    <entry file="file://$PROJECT_DIR$/Textbook/fibo.py" />
+    <entry file="file://$PROJECT_DIR$/Textbook/my_car.py" />
+    <entry file="file://$PROJECT_DIR$/Textbook/car.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="2128" column="13" selection-start-line="2128" selection-start-column="8" selection-end-line="2128" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/1717656384/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="5477" column="8" selection-start-line="5477" selection-start-column="8" selection-end-line="5477" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="1067" selection-start-line="1067" selection-end-line="1067" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Textbook/test_binary_search_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Textbook/binary_search_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
