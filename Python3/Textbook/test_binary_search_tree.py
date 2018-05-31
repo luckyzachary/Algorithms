@@ -1,5 +1,8 @@
-#import Textbook.binary_search_tree as bst
-from Textbook.binary_search_tree import *
+#ubuntu enable
+from binary_search_tree import *
+
+#windows enable
+#from Textbook.binary_search_tree import *
 
 a,b=1,2
 print(a.count if a > b else b)
