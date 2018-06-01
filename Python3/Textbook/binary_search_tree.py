@@ -127,10 +127,10 @@ class BinarySearchTree:
 
     def _in_order_recursion(self, node, data, bool_all=False):
         if node is not None:
-            self._all_in_order_recursion(node.left_child, data, bool_all)
+            self._in_order_recursion(node.left_child, data, bool_all)
             for i in range(0, node.count if bool_all else 1):
                 data.append(node.value)
-            self._all_in_order_recursion(node.right_child, data, bool_all)
+            self._in_order_recursion(node.right_child, data, bool_all)
 
     def get_in_order_without_recursion(self):
         return self._in_order_without_recursion()
