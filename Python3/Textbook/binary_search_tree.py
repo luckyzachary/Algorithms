@@ -19,6 +19,10 @@ class BinarySearchTree:
         self.root = root_node
 
     def create_tree(self, data):
+        self.root = None
+        self.append_tree(data)
+
+    def append_tree(self, data):
         for val in iter(data):
             self.insert_node(val)
 
@@ -85,8 +89,7 @@ class BinarySearchTree:
         return position[0] if position is not None else None
 
     def get_position(self, val):
-        parent_node = None
-        current_node = self.root
+        parent_node, current_node = None, self.root
         while current_node is not None:
             if val < current_node.value:
                 parent_node = current_node
@@ -99,16 +102,14 @@ class BinarySearchTree:
         return None
 
     def get_min_position(self):
-        parent_node = None
-        current_node = self.root
+        parent_node, current_node = None, self.root
         while current_node.left_child is not None:
             parent_node = current_node
             current_node = current_node.left_child
         return parent_node, current_node
 
     def get_max_position(self):
-        parent_node = None
-        current_node = self.root
+        parent_node, current_node = None, self.root
         while current_node.right_child is not None:
             parent_node = current_node
             current_node = current_node.right_child
@@ -116,28 +117,39 @@ class BinarySearchTree:
 
     def get_in_order_recursion(self):
         data = []
-        data = self._in_order_recursion(self.root, data)
-        return data
-
-    def _in_order_recursion(self, node, data):
-        if node is not None:
-            data = self._in_order_recursion(node.left_child, data)
-            data.append(node.value)
-            data = self._in_order_recursion(node.right_child, data)
+        self._in_order_recursion(self.root, data)
         return data
 
     def get_all_in_order_recursion(self):
         data = []
-        data = self._all_in_order_recursion(self.root, data)
+        self._in_order_recursion(self.root, data, True)
         return data
 
-    def _all_in_order_recursion(self, node, data):
+    def _in_order_recursion(self, node, data, bool_all=False):
         if node is not None:
-            data = self._all_in_order_recursion(node.left_child, data)
-            for i in range(0, node.count):
+            self._all_in_order_recursion(node.left_child, data, bool_all)
+            for i in range(0, node.count if bool_all else 1):
                 data.append(node.value)
-            data = self._all_in_order_recursion(node.right_child, data)
-        return data
+            self._all_in_order_recursion(node.right_child, data, bool_all)
 
     def get_in_order_without_recursion(self):
-        return
+        return self._in_order_without_recursion()
+
+    def get_all_in_order_without_recursion(self):
+        return self._in_order_without_recursion(True)
+
+    def _in_order_without_recursion(self, bool_all=False):
+        node = self.root
+        data, stack = [], [node]
+        if node is not None:
+            while len(stack) > 0:
+                if node is None:
+                    node = stack.pop()
+                    for i in range(0, node.count if bool_all else 1):
+                        data.append(node.value)
+                    node = node.right_child
+                else:
+                    node = node.left_child
+                if node is not None:
+                    stack.append(node)
+        return data
