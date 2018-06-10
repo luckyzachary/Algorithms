@@ -1,8 +1,4 @@
-#ubuntu enable
-from binary_search_tree import *
-
-#windows enable
-#from Textbook.binary_search_tree import *
+from Textbook.binary_search_tree import *
 
 print("===TestInit===")
 node = BinaryTreeNode(0)
@@ -10,7 +6,8 @@ print('root: ' + str(node.value))
 
 print("===TestMathod===")
 
-data = [1, 3, 5, -1, -4, 5, 9, -3, -2, 0, -7, -9, 4, -5, 2, 6, 8, -8, -2, -1, 7, -6, -6, -6]
+data = [1, 3, 5, -1, -4, 5, 9, -3, -2, 0, -7, -9, 4, -5, 2, 6, 8, -8, -2, -1, 7,
+        -6, -6, -6]
 print(data)
 bst = BinarySearchTree(None)
 bst.create_tree(data)
