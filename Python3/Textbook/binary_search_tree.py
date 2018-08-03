@@ -1,7 +1,7 @@
 class BinaryTreeNode:
 
     value = None
-    count = 1
+    count = 1  # 标记重复节点值的个数
     isLeaf = False
     left_child = None
     right_child = None
@@ -46,6 +46,7 @@ class BinaryTree:
         return data
 
     def _in_order_recursion(self, node, data, bool_all=False):
+        """ 中序遍历 递归实现 """
         if node is not None:
             self._in_order_recursion(node.left_child, data, bool_all)
             for i in range(0, node.count if bool_all else 1):
@@ -59,6 +60,7 @@ class BinaryTree:
         return self._in_order_without_recursion(True)
 
     def _in_order_without_recursion(self, bool_all=False):
+        """ 中序遍历 非递归实现 """
         node = self.root
         data, stack = [], [node]
         if node is not None:
@@ -76,6 +78,7 @@ class BinaryTree:
     
 
 class BinarySearchTree(BinaryTree):
+    """ 二叉搜索树，左子树都比本节点小，右子树都比本节点大 """
 
     def create_tree(self, data):
         self.root = None
@@ -86,10 +89,11 @@ class BinarySearchTree(BinaryTree):
                 or isinstance(data, set)):
             raise TypeError("TypeError：not list/tuple/set")
 
-        for val in iter(data):
+        for val in iter(data):  # iter用不用都行
             self.insert_node(val)
 
     def insert_node(self, val):
+        """ 逐级比较，直到将新元素作为叶子节点插入 """
         new_node = BinaryTreeNode(val)
         if self.root is None:
             self.root = new_node
@@ -115,6 +119,10 @@ class BinarySearchTree(BinaryTree):
         return current_node
 
     def delete_node(self, val, bool_all=False):
+        """ 待删除节点pointer, 若pointer无左子树，则用pointer右子节点替代pointer；
+         若pointer有左子树，则找到左子树中最大节点max_child， 由于max_child无右子树，
+         用max_child左子节点替代max_child，max_child替代pointer。
+        """
         position = self.get_position(val)
         if position is not None:
             if position[1].count > 1 and not bool_all:

@@ -1,11 +1,11 @@
 class MinHeap:
+    """ 最小堆，内置实现有heapq模块 """
 
     heap_list = []  # 存放堆数据的数组
 
     def _swap(self, index_x, index_y):
-        self.heap_list[index_x] ^= self.heap_list[index_y]
-        self.heap_list[index_y] ^= self.heap_list[index_x]
-        self.heap_list[index_x] ^= self.heap_list[index_y]
+        self.heap_list[index_x], self.heap_list[index_y] = \
+            self.heap_list[index_y], self.heap_list[index_x]
 
     def _sift_up(self, index):
         """ 向上调整 """

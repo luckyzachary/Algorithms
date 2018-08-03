@@ -3,6 +3,7 @@ from Textbook.min_heap import MinHeap
 
 
 class HuffmanTree(BinaryTree):
+    """ 霍夫曼树，带全外部路径长度最小的二叉树 """
 
     def create_tree(self, data):
         if not (isinstance(data, list) or isinstance(data, tuple)
