@@ -4,6 +4,9 @@ from Textbook.min_heap import MinHeap
 
 class HuffmanTree(BinaryTree):
     """ 霍夫曼树，带全外部路径长度最小的二叉树 """
+    """ 霍夫曼编码（前缀码）：左路径为0，右路径为1；
+        任一字符的二进制编码不能解释为其他字符编码的前缀
+    """
 
     def create_tree(self, data):
         if not (isinstance(data, list) or isinstance(data, tuple)
