@@ -1,13 +1,10 @@
 class BinaryTreeNode:
 
-    value = None
-    count = 1  # 标记重复节点值的个数
-    isLeaf = False
-    left_child = None
-    right_child = None
-
     def __init__(self, val):
         self.value = val
+        self.count = 1  # 标记重复节点值的个数
+        self.left_child = None
+        self.right_child = None
 
     def __lt__(self, other):
         if not isinstance(other, BinaryTreeNode):
@@ -175,6 +172,7 @@ class BinarySearchTree(BinaryTree):
         return None
 
     def get_min_position(self):
+        """ 获取最小值的位置 """
         parent_node, current_node = None, self.root
         while current_node.left_child is not None:
             parent_node = current_node
@@ -182,8 +180,40 @@ class BinarySearchTree(BinaryTree):
         return parent_node, current_node
 
     def get_max_position(self):
+        """ 获取最大值的位置 """
         parent_node, current_node = None, self.root
         while current_node.right_child is not None:
             parent_node = current_node
             current_node = current_node.right_child
         return parent_node, current_node
+
+
+class CompleteBinaryTree:
+
+    def __init__(self, tree_list):
+        if not (isinstance(tree_list, list) or isinstance(tree_list, tuple)
+                or isinstance(tree_list, set)):
+            raise TypeError("TypeError：not list/tuple/set")
+
+        self.tree_list = list(tree_list)
+
+    @staticmethod
+    def parent(index):
+        if isinstance(index, int) and index > 0:
+            return (index - 1) // 2
+        else:
+            return -1
+
+    def left_child(self, index):
+        if isinstance(index, int) and \
+                0 <= index <= (len(self.tree_list) - 2) // 2:
+            return 2 * index + 1
+        else:
+            return -1
+
+    def right_child(self, index):
+        if isinstance(index, int) and \
+                0 <= index <= (len(self.tree_list) - 3) // 2:
+            return 2 * index + 2
+        else:
+            return -1

@@ -1,4 +1,4 @@
-from Textbook.binary_search_tree import *
+from Textbook.data_structures.binary_tree import *
 
 print("===TestInit===")
 node = BinaryTreeNode(0)
