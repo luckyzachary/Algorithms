@@ -8,7 +8,9 @@ class Solution:
         :type n: int
         :rtype: str
         """
-        if n == 1:
+        if n < 1:
+            return None
+        elif n == 1:
             return "1"
         else:
             return self.reduce(2, n, "1")
@@ -33,8 +35,5 @@ class Solution:
 
 
 solution = Solution()
-print(solution.count_and_say(1))
-print(solution.count_and_say(2))
-print(solution.count_and_say(3))
-print(solution.count_and_say(4))
-print(solution.count_and_say(5))
+for i in range(30):
+    print(solution.count_and_say(i))
