@@ -116,9 +116,10 @@ class BinarySearchTree(BinaryTree):
         return current_node
 
     def delete_node(self, val, bool_all=False):
-        """ 待删除节点pointer, 若pointer无左子树，则用pointer右子节点替代pointer；
-         若pointer有左子树，则找到左子树中最大节点max_child， 由于max_child无右子树，
-         用max_child左子节点替代max_child，max_child替代pointer。
+        """
+        待删除节点pointer, 若pointer无左子树，则用pointer右子节点替代pointer；
+        若pointer有左子树，则找到左子树中最大节点max_child， 由于max_child无右子树，
+        用max_child左子节点替代max_child，max_child替代pointer。
         """
         position = self.get_position(val)
         if position is not None:
