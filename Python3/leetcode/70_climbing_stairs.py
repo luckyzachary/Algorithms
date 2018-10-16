@@ -35,7 +35,7 @@ class Solution:
 def main():
     solution = Solution()
     for i in range(1, 1000):
-        print(solution.climb_stairs(i))
+        print(str(i) + ":" + str(solution.climb_stairs(i)))
 
 
 if __name__ == '__main__':
