@@ -1,6 +1,4 @@
-#!/usr/bin/e
-# v python3
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 
 
 class Solution:

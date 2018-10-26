@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 import sys
+
 
 class Solution:
     def max_profit(self, prices):
