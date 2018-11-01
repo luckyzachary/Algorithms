@@ -14,7 +14,7 @@ class HuffmanTree(BinaryTree):
             raise TypeError("TypeError：not list/tuple/set")
 
         if len(data) > 1:
-            min_heap = MinHeap(data)
+            min_heap = MinHeap(data, len(data))
             left_node = BinaryTreeNode(min_heap.pop())
             while not min_heap.is_empty():
                 right_node = BinaryTreeNode(min_heap.pop())

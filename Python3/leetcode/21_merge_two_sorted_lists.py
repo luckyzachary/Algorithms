@@ -17,7 +17,7 @@ class Solution:
         """
         l3 = ListNode('l3')
         head = l3
-        while l1 != None and l2 !=None:
+        while l1 != None and l2 != None:
             if l1.val <= l2.val:
                 l3.next = l1
                 l1 = l1.next

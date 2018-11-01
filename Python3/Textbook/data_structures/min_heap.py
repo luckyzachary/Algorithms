@@ -15,6 +15,9 @@ class MinHeap:
         for i in range(self.size // 2 - 1, -1, -1):
             self.sift_down(i)
 
+    def is_empty(self):
+        return self.size <= 0
+
     def sift_up(self, index):
         """ 向上调整 """
         parent_index = self.parent(index)

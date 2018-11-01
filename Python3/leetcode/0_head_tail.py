@@ -9,3 +9,5 @@ class Solution:
 
 def test_mytest():
     sol = Solution()
+
+test_mytest()
