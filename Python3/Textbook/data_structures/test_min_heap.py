@@ -1,4 +1,4 @@
-from Textbook.data_structures.min_heap import MinHeap
+from textbook.data_structures.min_heap import MinHeap
 
 s = [27, -6, 18, 16, -29, -34, 19]
 # mh = MinHeap(s, 7)

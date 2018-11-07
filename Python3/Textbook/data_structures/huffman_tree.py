@@ -1,5 +1,5 @@
-from Textbook.data_structures.binary_tree import BinaryTreeNode, BinaryTree
-from Textbook.data_structures.min_heap import MinHeap
+from textbook.data_structures.binary_tree import BinaryTreeNode, BinaryTree
+from textbook.data_structures.min_heap import MinHeap
 
 
 class HuffmanTree(BinaryTree):

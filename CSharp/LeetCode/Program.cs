@@ -11,7 +11,6 @@ namespace Algorithms
 
             Console.WriteLine();
             Console.WriteLine("---End---");
-            Console.ReadKey();
         }
 
         private static void Printf()

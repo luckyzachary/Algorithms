@@ -22,7 +22,7 @@ def create_input_csv(row, col):
 
 def read_csv():
     """
-    import Textbook.sort.out_sort.file_io as fio
+    import textbook.sort.out_sort.file_io as fio
     f = fio.read_csv()
 
     for i in f:

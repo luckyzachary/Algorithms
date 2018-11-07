@@ -1,4 +1,4 @@
-from Textbook.sort.insert_sort import *
+from textbook.sort.insert_sort import *
 
 
 """

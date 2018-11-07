@@ -1,6 +1,6 @@
 import csv
-from Textbook.data_structures.min_heap import MinHeap
-from Textbook.sort.out_sort import file_io as fio
+from textbook.data_structures.min_heap import MinHeap
+from textbook.sort.out_sort import file_io as fio
 
 
 def replacement_selection(heap_size, out_size, i_type="csv", buffering=1024):

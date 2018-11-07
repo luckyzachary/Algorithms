@@ -1,6 +1,6 @@
-from Textbook.sort.out_sort import file_io as fio
-from Textbook.sort.out_sort import replacement_selection as rs
-from Textbook.sort.out_sort import winner_tree as wt
+from textbook.sort.out_sort import file_io as fio
+from textbook.sort.out_sort import replacement_selection as rs
+from textbook.sort.out_sort import winner_tree as wt
 
 
 buffering = 1024  # 设定输入或输出总文件缓冲区bytes大小

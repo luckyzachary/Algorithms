@@ -1,4 +1,4 @@
-from Textbook.data_structures.huffman_tree import HuffmanTree
+from textbook.data_structures.huffman_tree import HuffmanTree
 
 data = [6, 2, 3, 4]
 my_huffman_tree = HuffmanTree(None)
