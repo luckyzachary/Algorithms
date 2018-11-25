@@ -32,18 +32,18 @@ vector<int> quickSort2(vector<int> &iArr, int left, int right) {
     }
     int lt = left;
     int gt = right;
-    int pivotValue = iArr[right];
+    int tmp = iArr[right];
     while (lt < gt) {
-        while (iArr[lt] <= pivotValue && lt < gt) {
+        while (iArr[lt] <= tmp && lt < gt) {
             lt++;
         }
         iArr[gt] = iArr[lt];
-        while (iArr[gt] >= pivotValue && lt < gt) {
+        while (iArr[gt] >= tmp && lt < gt) {
             gt--;
         }
         iArr[lt] = iArr[gt];
     }
-    iArr[lt] = pivotValue;
+    iArr[lt] = tmp;
     quickSort2(iArr, left, lt - 1);
     quickSort2(iArr, lt + 1, right);
     return iArr;
